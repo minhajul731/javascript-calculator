@@ -20,22 +20,60 @@
             <div class="border-slate-300">
                 <h3 class="bg-gray-100 px-4 py-6 text-right text-5xl rounded-md border-4 border-gray-300 mb-2"
                     style="width: 540px;">
-                    00</h3>
+                    <span id="display-result">0</span>
+                </h3>
             </div>
             <div class="grid grid-cols-2 gap-4">
                 <div class="grid grid-cols-4 gap-4">
-                    <button
+                    <input type="button" value="+" onclick="display('+')"
+                        class="bg-yellow-200 hover:bg-yellow-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="-" onclick="display('-')"
+                        class="bg-yellow-200 hover:bg-yellow-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="*" onclick="display('*')"
+                        class="bg-yellow-200 hover:bg-yellow-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="/" onclick="display('/')"
+                        class="bg-yellow-200 hover:bg-yellow-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+
+
+                    <input type="button" value="0" onclick="display('0')"
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="1" onclick="display('1')"
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="2" onclick="display('2')"
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="3" onclick="display('3')"
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="4" onclick="display('4')"
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="5" onclick="display('5')"
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="6" onclick="display('6')"
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="7" onclick="display('7')"
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="8" onclick="display('8')"
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="9" onclick="display('9')"
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="." onclick="display('.')"
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+                    <input type="button" value="Del" onclick="display('del')"
+                        class="bg-red-200 hover:bg-red-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300" />
+
+
+                    <!-- <button
                         class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">+</button>
                     <button
                         class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">-</button>
                     <button
                         class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">*</button>
                     <button
-                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">/</button>
-                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">/</button> -->
+
+                    <!-- <button
                         class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">0</button>
                     <button
-                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">1</button>
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300 handle-button">1</button>
                     <button
                         class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">2</button>
                     <button
@@ -53,17 +91,24 @@
                     <button
                         class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">9</button>
                     <button
-                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">.</button>
-                    <button
-                        class="bg-red-200 hover:bg-red-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">AC</button>
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">.</button> -->
+
+                    <!-- <button
+                        class="bg-red-200 hover:bg-red-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">AC</button> -->
                 </div>
                 <div>
-                    <button
-                        class="bg-green-200 hover:bg-green-600 hover:text-white hover:font-bold text-3xl py-2 border rounded-lg text-center items-stretch py-40 px-10">=</button>
+                    <input type="button" value="=" onclick="display('=')"
+                        class="bg-green-200 hover:bg-green-600 hover:text-white hover:font-bold text-3xl py-2 border rounded-lg text-center items-stretch py-40 px-10" />
+
+                    <!-- <button
+                        class="bg-green-200 hover:bg-green-600 hover:text-white hover:font-bold text-3xl py-2 border rounded-lg text-center items-stretch py-40 px-10">=</button> -->
                 </div>
             </div>
         </div>
     </main>
+
+    <!-- javascript -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>
