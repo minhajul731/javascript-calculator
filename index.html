@@ -11,33 +11,56 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-slate-800">
     <header>
-        <h1 class="text-4xl font-bold text-emerald-500 text-center mt-5 mb-10">Javascript Calculator</h1>
+        <h1 class="text-4xl font-bold text-white ml-12 mt-5 mb-10">Javascript Calculator</h1>
     </header>
     <main class="w-3/4 mx-auto">
-        <div>
-            <div class="mb-5">
-                <h3 class="bg-red-100 px-4 py-6 text-right text-5xl rounded-md">00</h3>
+        <div class="w-3/4 mx-auto">
+            <div class="border-slate-300">
+                <h3 class="bg-gray-100 px-4 py-6 text-right text-5xl rounded-md border-4 border-gray-300 mb-2"
+                    style="width: 540px;">
+                    00</h3>
             </div>
-            <div class="grid grid-cols-4 gap-6">
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">+</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">-</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">*</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">/</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">0</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">1</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">2</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">3</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">4</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">5</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">6</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">7</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">8</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">9</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">.</button>
-                <button class="bg-lime-200 text-3xl py-2 border rounded-lg text-center">=</button>
-
+            <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-4 gap-4">
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">+</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">-</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">*</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">/</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">0</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">1</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">2</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">3</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">4</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">5</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">6</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">7</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">8</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">9</button>
+                    <button
+                        class="bg-sky-200 hover:bg-sky-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">.</button>
+                    <button
+                        class="bg-red-200 hover:bg-red-600 hover:text-white text-3xl py-2 border rounded-lg text-center border-4 border-gray-300">AC</button>
+                </div>
+                <div>
+                    <button
+                        class="bg-green-200 hover:bg-green-600 hover:text-white hover:font-bold text-3xl py-2 border rounded-lg text-center items-stretch py-40 px-10">=</button>
+                </div>
             </div>
         </div>
     </main>
